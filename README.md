@@ -4,26 +4,27 @@
 <sup>2</sup>*Torus AI, Toulouse, France*
 
 
-Torus GPT model is an open-source, multi-turn, large language model (LLM) specifically designed for the Vietnamese language. Trained on an extensive and diverse Vietnamese dataset, TorusGPT strives to deliver superior understanding and representation of the Vietnamese language. What sets it apart is its distinct advantages over other LLMs, in terms of speed, performance, and commercial applicability.
+TorusGPT stands as a open-source, multi-turn, large language model (LLM), initially developed for the Vietnamese language. It marks the beginning of a broader vision to support multiple languages, focusing on those targeted by Torus' diverse product range.  This groundbreaking model, underpinned by a comprehensive and diverse dataset, is engineered to deliver unparalleled linguistic understanding and representation, surpassing other LLMs in efficiency, performance, and commercial viability.
 
-This release includes model weights, inference code, evaluation result for 7B (7-billion parameters) version.
+This release includes the model weights, inference code, and evaluation results for the 7B (7-billion parameter) version, initially focused on Vietnamese, with forthcoming adaptations for additional languages.
 
 - [Introduction](#introduction)
 - [Model weights](#model-weights)
 - [Technical overview](#technical-overview)
 - [Evaluations](#evaluations)
+- [License](#license)
 - [Disclaimer](#disclaimer)
 - [Acknowledgement](#acknowledgement)
 
 ## Introduction
 
-Torus Actions SAS (a.k.a. Torus AI) was founded in 2019 by a group of scientists led by Professor Nguyen Tien Zung who discovered the toric conservation principle:
+Established in 2019, Torus Actions SAS, Toulouse, France (also known as [Torus AI](https://www.torus.ai)) was initiated by a collective of scientists under the leadership of Professor [Nguyen Tien Zung](https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_Ti%E1%BA%BFn_D%C5%A9ng), who discovered the toric conservation principle. This principle states that
 ```
 Everything conserved by a dynamical system is also conserved by its associated torus actions.
 ```
-Torus' mission is to create augmented intelligence solutions for the well-being of millions of people worldwide.
+Torus AI's mission is to develop augmented intelligence solutions at enhancing global well-being.
 
-Torus GPT is the latest initiative aimed at enhancing the language model in Vietnam for researchers and end-to-end users. The model is designed with the goal of ensuring ease of deployment and functionality, while also maintaining an open license. Our objective is to foster an active community that collaborates on solving real-life problems, contributing to the advancement of AI development in Vietnam.
+Torus GPT, debuting with a focus on the Vietnamese language, is the initial step towards a versatile, multilingual platform. Designed for ease of deployment and functionality, and maintaining an open license, this model is intended to foster community engagement in addressing global challenges and promoting AI advancement.
 
 ## Model weights
 
@@ -38,22 +39,23 @@ Our lastest weights for Torus GPT release can be found here:
 
 The pre-trained model is based on LLAMA 2 which fine-tuned on large raw dataset by bkai-foundation-labs [Vietnamese-LLAMA2](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB).
 
-The fine-tuned model Torus GPT is trained on 430k of high-quality, multi-turn conversation data, included both data from open-source and our in-house data ensuring the quality of chat model and the Vietnamese structural understanding capability of the model. Some of the open-source data are [UIT-ViQUAD](https://paperswithcode.com/dataset/uit-viquad), [Bactrian-X](https://huggingface.co/datasets/MBZUAI/Bactrian-X), [Grade-school-math](https://github.com/openai/grade-school-math),... Other data contains our custom conversation data, multiple-topic data.
+This mode, trained on 430k of high-quality, multi-turn conversation data, sourced from both open-source and in-house datasets, Torus GPT excels in chat modeling and Vietnamese language understanding. Sources include [UIT-ViQUAD](https://paperswithcode.com/dataset/uit-viquad), [Bactrian-X](https://huggingface.co/datasets/MBZUAI/Bactrian-X), [Grade-school-math](https://github.com/openai/grade-school-math),... Other datasets contain our custom conversation data and data covering multiple topics.
 
-Torus GPT have some major main advantages compared to other's model:
+Key advantages of Torus GPT include:
 
-- It's fully open source with [LLAMA 2 LICENSE](https://github.com/facebookresearch/llama)
-- It's enhance huge better speed by the Vietnamese Tokenizer (Which about 1/4 less token in an Vietnamese sentence compared to ChatGPT and LLAMA), and the small model size
-- The comparison result is a lot better compared to current open-source model
-- The deployment method is easy, you can create an conversational chatbot within a few step.
+- Comprehensive open-source availability under the [LLAMA 2 LICENSE](https://github.com/facebookresearch/llama)
+- Enhanced speed with the [Vietnamese Tokenizer](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB) (Which about 1/4 less token in an Vietnamese sentence compared to ChatGPT and LLAMA), and a smaller model size.
+- Superior performance over existing open-source models.
+- Simplified deployment for a wide array of applications.
 
 With Torus GPT, we hope to push the state of current AI technology huge step forward for Vietnam and Vietnamese people.
 
 ## Evaluations
 
-Thank to the effort of [PhoGPT team](https://github.com/VinAIResearch/PhoGPT), we use the Vicuna translated benchmark question [HERE](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) with our benchmark results on **Torus GPT**, and compared them by the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). The result bellow shows that **Torus GPT** has a competitive performance compared to current State-of-the-art like ChatGPT.
+Thank to the effort of [PhoGPT team](https://github.com/VinAIResearch/PhoGPT), we used the Vicuna translated benchmark question [HERE](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) with our benchmark results on **TorusGPT**, and compared them using the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). The table bellow shows that **TorusGPT** performs competitively against state-of-the-art models like ChatGPT.
 
-The benchmark used is the fastchat benchmark method, thus model like **URA-LLaMa-7B** and  **URA-LLaMa-13B** has a big advantages, since they generate a lot of English answer which is not concern as an shortcoming because of the evaluation prompt of Fastchat. In realistic, they may have much more lower score, since we are benchmarking on Vietnamese languages.
+
+The Fastchat benchmark method, used for evaluating language models, primarily focuses on the accuracy of information in responses. However, an important aspect not accounted for in this method is the right language accuracy. Both **URA-LLaMa-7B** and **URA-LLaMa-13B** often respond in English to Vietnamese questions. Realistically, their performance might be rated significantly lower when specifically benchmarked for proficiency in the Vietnamese language.
 
 The average result shown in the table bellow:
 
@@ -72,15 +74,15 @@ Ranking | model          | Result   |
 
 The details of benchmark in term of subject is shown in the figure bellow (we do not display URA-LLaMa because they generate half of answer in english):
 
-![Result](result.png)
+![Result](imgs/result.png)
 
-**TorusGPT 7B** perform very good at qualitative task compared to other model, especially have the ability to write and answer almost like gpt-3.5-turbo model. However, in quantitative tasks like coding and mathematics, the TorusGPT model is not good due to lacks of data in the training phase. This evaluation result suggest the further development of increase the ability of model in STEM task.
+**TorusGPT 7B** excels in qualitative tasks compared to other model, particularly with its ability to write and answer almost on par with the GPT-3.5-turbo model. However, it shows limitations in quantitative tasks like coding and mathematics due to the nature of its training data. This suggests opportunities for future enhancements in STEM-related tasks.
 
-To run the evaluation code again, please refer to [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). We included the answer of each model, the prompt, and the evaluation result [HERE](https://huggingface.co/allbyai/torusgpt-7b-v1.0/tree/main/mt_bench) for re-produce. The generated result can be also obtained [HERE](https://docs.google.com/spreadsheets/d/1S1UmfImrLKFtxRmdX6B5plnIIyh3RiOr/edit?usp=sharing&ouid=102198682273617686649&rtpof=true&sd=true) for human evaluation.
+For detailed benchmark information and to rerun the evaluation code, refer to  [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). We have included the answers from each model, the prompts, and the evaluation results [HERE](https://huggingface.co/allbyai/torusgpt-7b-v1.0/tree/main/mt_bench) for reproduction. The generated results can also be accessed [HERE](https://docs.google.com/spreadsheets/d/1S1UmfImrLKFtxRmdX6B5plnIIyh3RiOr/edit?usp=sharing&ouid=102198682273617686649&rtpof=true&sd=true) for human evaluation.
 
 ## Run the model
 
-The prompt of Torus LLM is same with Vicuna, take the advantages of multi-turn, high-speed, token-effective conversation. The example prompt describe bellow.
+TorusGPT utilizes a prompt format similar to Vicuna,designed for multi-turn, high-speed, and token-efficient conversations. An example prompt is described bellow for illustration.
 
 ```
 Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng.
@@ -91,7 +93,7 @@ USER: Bạn khỏe chứ?
 ASSISTANT: Tôi khỏe, cảm ơn.</s>
 ```
 
-You can use that template to run the model by Huggingface transformer. The inference code is in the file [inference_hf.py](inference_hf.py). You can run it by:
+This template can be employed to operate the model via Huggingface transformers. The necessary inference code is available in the file [inference_hf.py](/inference_hf.py). Execute it using the following command:
 
 ```
 python inference_hf.py
@@ -99,7 +101,7 @@ python inference_hf.py
 
 ## Deployment
 
-Torus GPT can be easy to deploy using Fastchat.
+TorusGPT can be easily deployed using Fastchat.
 
 Step 1: Install fastchat
 ```
@@ -108,38 +110,47 @@ pip3 install "fschat[model_worker,webui]"
 
 Step 2: Run the RESTful API Server
 
-Run the controller:
+Begin by running the controller:
 ```
 python3 -m fastchat.serve.controller
 ```
 
-Run the model worker:
+Next, launch the model worker:
 ```
 python3 -m fastchat.serve.model_worker --model-path path-to-TorusGPT --conv-template vicuna_v1.1
 ```
 
-Launch the RESTful API server:
+Then, initiate the RESTful API server:
 ```
 python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 ```
 
-Run the example streamlit code:
+Finaly, run the example streamlit code:
 ```
 streamlit run demo.py
 ```
 
+## License
+TorusGPT is licensed under the [TorusGPT community License](/LICENSE) agreement.
+
+TorusGPT is licensed under the [LLAMA 2 Community License](https://ai.meta.com/llama/license/), Copyright © Meta Platforms, Inc. All Rights Reserved.
+
 ## Disclaimer
 
-This project is built upon Meta's Llama-2 model. It is essential to strictly adhere to the open-source license agreement of Llama-2 when using this model. If you incorporate third-party code, please ensure compliance with the relevant open-source license agreements. It's important to note that the content generated by the model may be influenced by various factors, such as calculation methods, random elements, and potential inaccuracies in quantification. Consequently, this project does not offer any guarantees regarding the accuracy of the model's outputs, and it disclaims any responsibility for consequences resulting from the use of the model's resources and its output. For those employing the models from this project for commercial purposes, developers must adhere to local laws and regulations to ensure the compliance of the model's output content. This project is not accountable for any products or services derived from such usage.
+This project is founded on Meta's Llama-2 model. Users must strictly adhere to the open-source license agreement of Llama-2 when utilizing this model. If integrating third-party code, compliance with the corresponding open-source license agreements is imperative. Note that the content generated by the model may vary due to factors like calculation methods, random elements, and potential data inaccuracies. Therefore, no guarantees are made regarding the precision of the model's outputs, and responsibility for any consequences arising from the use of the model's resources or outputs is disclaimed. Commercial users of these models must comply with local laws and regulations to ensure the legality of the model's output content. This project bears no responsibility for any products or services developed from its use.
 
 ## Acknowledgement
 
-We would like to thank to [bkai-foundation-labs](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB), [phogpt](https://github.com/VinAIResearch/PhoGPT), and [fastchat](https://github.com/lm-sys/FastChat/tree/main) for some references of our work.
+Special thanks to [bkai-foundation-labs](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB), [phogpt](https://github.com/VinAIResearch/PhoGPT), and [fastchat](https://github.com/lm-sys/FastChat/tree/main) for their contributions and references in our work.
 
-Please cite our work if you find the Torus GPT helpful.
+Please consider citing our work if you find the Torus GPT beneficial.
 
 ```
-@software{
-
+@misc{allbyai2023torusgpt,
+    title={TorusGPT: Vietnamese open source Generative Pre-training model},
+    author={Duy Quang Do, Hoang Le and Duc Thang Nguyen},
+    year={2023},
+    note={https://github.com/allbyai/torusGPT}
+    howpublished={Software}
 }
 ```
