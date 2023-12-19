@@ -31,7 +31,7 @@ Our lastest weights for Torus GPT release can be found here:
 
 | Date  | Version | Huggingface Repo | Context Length |
 | ------------- | ------------- |------------- |------------- |
-| 19/12/2023  | ```TorusGPT-7B-Chat```  |[TorusGPT1.0](https://huggingface.co/allbyai/torusgpt-7b-v1.0) | 2048 |
+| 19/12/2023  | ```TorusGPT-7B-1.0```  |[TorusGPT1.0](https://huggingface.co/allbyai/torusgpt-7b-v1.0) | 2048 |
 
 
 ## Technical overview
