@@ -9,7 +9,8 @@ Torus GPT model is an open-source, multi-turn, large language model (LLM) specif
 This release includes model weights, inference code, evaluation result for 7B (7-billion parameters) version.
 
 - [Introduction](#introduction)
-- [Technical Details](#technical-details)
+- [Model weights](#model-weights)
+- [Technical overview](#technical-overview)
 - [Evaluations](#evaluations)
 - [Disclaimer](#disclaimer)
 - [Acknowledgement](#acknowledgement)
@@ -24,7 +25,16 @@ Torus' mission is to create augmented intelligence solutions for the well-being 
 
 Torus GPT is the latest initiative aimed at enhancing the language model in Vietnam for researchers and end-to-end users. The model is designed with the goal of ensuring ease of deployment and functionality, while also maintaining an open license. Our objective is to foster an active community that collaborates on solving real-life problems, contributing to the advancement of AI development in Vietnam.
 
-## Technical details
+## Model weights
+
+Our lastest weights for Torus GPT release can be found here:
+
+| Date  | Version | Huggingface Repo |
+| ------------- | ------------- |------------- |
+| 19/12/2023  | ```TorusGPT-7B-Chat```  |[TorusGPT1.0](https://huggingface.co/) |
+
+
+## Technical overview
 
 The pre-trained model is based on LLAMA 2 which fine-tuned on large raw dataset by bkai-foundation-labs [Vietnamese-LLAMA2](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB).
 
@@ -41,7 +51,32 @@ With Torus GPT, we hope to push the state of current AI technology huge step for
 
 ## Evaluations
 
-Thank to the effort of [PhoGPT team](https://github.com/VinAIResearch/PhoGPT), we use the Vicuna translated benchmark question [HERE](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) with our benchmark results on Torus GPT, and compared them by the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). The result bellow shows that Torus GPT has a competitive performance compared to current State-of-the-art like ChatGPT.
+Thank to the effort of [PhoGPT team](https://github.com/VinAIResearch/PhoGPT), we use the Vicuna translated benchmark question [HERE](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) with our benchmark results on **Torus GPT**, and compared them by the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). The result bellow shows that **Torus GPT** has a competitive performance compared to current State-of-the-art like ChatGPT.
+
+The benchmark used is the fastchat benchmark method, thus model like **URA-LLaMa-7B** and  **URA-LLaMa-13B** has a big advantages, since they generate a lot of English answer which is not concern as an shortcoming because of the evaluation prompt of Fastchat. In realistic, they may have much more lower score, since we are benchmarking on Vietnamese languages.
+
+The average result shown in the table bellow:
+
+Ranking | model          | Result   |
+| ------------- | ------------- | ------------- |
+1|gpt-4          |      9.52500 |
+2|gpt-3.5-turbo         |     9.23750   |
+3|**TorusGPT 7B**         |    7.31875   |
+4|URA-LLaMa-13B*     |   6.98750   |
+5|PhoGPT-7B5-Instruct|  6.49375   |
+6|Vietcuna-7B-v3      | 5.21250   |
+7|URA-LLaMa-7B*       |  3.58750   |
+8|Vietcuna-3B        |  2.28750   |
+
+*: *URA's model real score must be much lower in the respect to Vietnamese answer quality evaluation*
+
+The details of benchmark in term of subject is shown in the figure bellow (we do not display URA-LLaMa because they generate half of answer in english):
+
+![Result](result.png)
+
+**TorusGPT 7B** perform very good at qualitative task compared to other model, especially have the ability to write and answer almost like gpt-3.5-turbo model. However, in quantitative tasks like coding and mathematics, the TorusGPT model is not good due to lacks of data in the training phase. This evaluation result suggest the further development of increase the ability of model in STEM task.
+
+To run the evaluation code again, please refer to [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). We included the answer of each model and the evaluation result [HERE](). The generated result can be also obtained [HERE]().
 
 ## Run the model
 
