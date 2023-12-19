@@ -1,6 +1,10 @@
 # Torus GPT: Vietnamese open source Generative Pre-training model
+**Author**: **Duy Quang Do<sup>1</sup>**, **Hoang Le<sup>1</sup>** and **Duc Thang Nguyen<sup>2</sup>**<br>
+<sup>1</sup>*Taureau AI, Hanoi, Vietnam*<br>
+<sup>2</sup>*Torus AI, Toulouse, France*
 
-The Torus GPT model is an open-source, multi-turn, large language model (LLM) specifically designed for the Vietnamese language. Trained on an extensive and diverse Vietnamese dataset, TorusGPT strives to deliver superior understanding and representation of the Vietnamese language. What sets it apart is its distinct advantages over other LLMs, in terms of speed, performance, and commercial applicability.
+
+Torus GPT model is an open-source, multi-turn, large language model (LLM) specifically designed for the Vietnamese language. Trained on an extensive and diverse Vietnamese dataset, TorusGPT strives to deliver superior understanding and representation of the Vietnamese language. What sets it apart is its distinct advantages over other LLMs, in terms of speed, performance, and commercial applicability.
 
 This release includes model weights, inference code, evaluation result for 7B (7-billion parameters) version.
 
