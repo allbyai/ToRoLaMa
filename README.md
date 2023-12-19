@@ -1,5 +1,5 @@
 # Torus GPT: Vietnamese open source Generative Pre-training model
-**Author**: **Duy Quang Do<sup>1</sup>**, **Hoang Le<sup>1</sup>** and **Duc Thang Nguyen<sup>2</sup>**<br>
+**Authors**: **Duy Quang Do<sup>1</sup>**, **Hoang Le<sup>1</sup>** and **Duc Thang Nguyen<sup>2</sup>**<br>
 <sup>1</sup>*Taureau AI, Hanoi, Vietnam*<br>
 <sup>2</sup>*Torus AI, Toulouse, France*
 
