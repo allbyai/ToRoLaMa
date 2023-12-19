@@ -18,7 +18,7 @@ This release includes the model weights, inference code, and evaluation results 
 
 ## Introduction
 
-Established in 2019, Torus Actions SAS, Toulouse, France (also known as [Torus AI](https://www.torus.ai)) was initiated by a collective of scientists under the leadership of Professor [Nguyen Tien Zung](https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_Ti%E1%BA%BFn_D%C5%A9ng), who discovered the toric conservation principle. This principle states that
+Established in 2019, Torus Actions SAS, Toulouse, France (also known as [Torus AI](https://www.torus.ai)) was initiated by a collective of scientists under the leadership of Professor [Nguyen Tien Zung](https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_Ti%E1%BA%BFn_D%C5%A9ng), who discovered the toric conservation principle. This principle states that:
 ```
 Everything conserved by a dynamical system is also conserved by its associated torus actions.
 ```
