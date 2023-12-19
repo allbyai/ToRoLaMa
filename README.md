@@ -76,7 +76,7 @@ The details of benchmark in term of subject is shown in the figure bellow (we do
 
 **TorusGPT 7B** perform very good at qualitative task compared to other model, especially have the ability to write and answer almost like gpt-3.5-turbo model. However, in quantitative tasks like coding and mathematics, the TorusGPT model is not good due to lacks of data in the training phase. This evaluation result suggest the further development of increase the ability of model in STEM task.
 
-To run the evaluation code again, please refer to [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). We included the answer of each model and the evaluation result [HERE](). The generated result can be also obtained [HERE]().
+To run the evaluation code again, please refer to [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). We included the answer of each model, the prompt, and the evaluation result [HERE](https://huggingface.co/allbyai/torusgpt-7b-v1.0/tree/main/mt_bench) for re-produce. The generated result can be also obtained [HERE](https://docs.google.com/spreadsheets/d/1S1UmfImrLKFtxRmdX6B5plnIIyh3RiOr/edit?usp=sharing&ouid=102198682273617686649&rtpof=true&sd=true) for human evaluation.
 
 ## Run the model
 
