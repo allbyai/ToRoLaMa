@@ -1,3 +1,6 @@
+# author: AllByAI, TorusAI
+# this software is licensed under the TorusGPT License and Llama2.
+
 import torch
 import transformers
 
