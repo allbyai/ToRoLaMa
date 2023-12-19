@@ -29,9 +29,9 @@ Torus GPT is the latest initiative aimed at enhancing the language model in Viet
 
 Our lastest weights for Torus GPT release can be found here:
 
-| Date  | Version | Huggingface Repo |
-| ------------- | ------------- |------------- |
-| 19/12/2023  | ```TorusGPT-7B-Chat```  |[TorusGPT1.0](https://huggingface.co/) |
+| Date  | Version | Huggingface Repo | Context Length |
+| ------------- | ------------- |------------- |------------- |
+| 19/12/2023  | ```TorusGPT-7B-Chat```  |[TorusGPT1.0](https://huggingface.co/allbyai/torusgpt-7b-v1.0) | 2048 |
 
 
 ## Technical overview
@@ -91,7 +91,11 @@ USER: Bạn khỏe chứ?
 ASSISTANT: Tôi khỏe, cảm ơn.</s>
 ```
 
-You can use that template to run the model by Huggingface transformer.
+You can use that template to run the model by Huggingface transformer. The inference code is in the file [inference_hf.py](inference_hf.py). You can run it by:
+
+```
+python inference_hf.py
+```
 
 ## Deployment
 
