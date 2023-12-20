@@ -4,7 +4,7 @@
 <sup>2</sup>*Torus AI, Toulouse, France*
 
 
-TorusGPT stands as a open-source, multi-turn, large language model (LLM), initially developed for the Vietnamese language. It marks the beginning of a broader vision to support multiple languages, focusing on those targeted by Torus' diverse product range.  This groundbreaking model, underpinned by a comprehensive and diverse dataset, is engineered to deliver unparalleled linguistic understanding and representation, surpassing other LLMs in efficiency, performance, and commercial viability.
+TorusGPT stands as an open-source, multi-turn, large language model (LLM), initially crafted with a focus on the Vietnamese language. It represents the first step towards a wider goal of supporting a variety of languages, particularly those relevant to Torus' array of products.  Developed using a diverse and extensive dataset, TorusGPT aims to provide an enhanced understanding and representation of languages, aspiring to meet and possibly exceed the efficiency, performance, and commercial applicability of existing LLMs.
 
 This release includes the model weights, inference code, and evaluation results for the 7B (7-billion parameter) version, initially focused on Vietnamese, with forthcoming adaptations for additional languages.
 
