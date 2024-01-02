@@ -23,9 +23,9 @@ Established in 2019, Torus Actions SAS, Toulouse, France (also known as [Torus A
 Everything conserved by a dynamical system is also conserved by its associated torus actions.
 ```
 
-Founded in 2021 in Hanoi, Taureau AI's goal is to advance AI technology, particularly in the areas of AI product engineering and software development. Taureau AI, with its mission to develop AI and software engineering within the Torus ecosystem.
+Taureau AI, set up in 2021 in Hanoi, is dedicated to pushing the frontiers of AI technology, focusing specifically on AI product engineering and software development. The company aims to contribute to the advancement of AI and software engineering within the Torus ecosystem.
 
-Our mission is to develop augmented intelligence solutions at enhancing global well-being.
+Our objective is to create augmented intelligence solutions that contribute to the betterment of global well-being.
 
 Toro-LLaMA, debuting with a focus on the Vietnamese language, is the initial step towards a versatile, multilingual platform. Designed for ease of deployment and functionality, and maintaining an open license, this model is intended to foster community engagement in addressing global challenges and promoting AI advancement.
 
