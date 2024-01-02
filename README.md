@@ -1,4 +1,4 @@
-# Torus GPT: Vietnamese open source Generative Pre-training model
+# Toro LlaMA: Vietnamese open source Generative Pre-training model
 **Authors**: **Duy Quang Do<sup>1</sup>**, **Hoang Le<sup>1</sup>** and **Duc Thang Nguyen<sup>2</sup>**<br>
 <sup>1</sup>*Taureau AI, Hanoi, Vietnam*<br>
 <sup>2</sup>*Torus AI, Toulouse, France*
@@ -32,14 +32,14 @@ Our lastest weights for Toro-LlaMA release can be found here:
 
 | Date  | Version | Huggingface Repo | Context Length |
 | ------------- | ------------- |------------- |------------- |
-| 19/12/2023  | ```Toro-LlaMA-7B-1.0```  |[Toro-LlaMA.0](https://huggingface.co/allbyai/torusgpt-7b-v1.0) | 2048 |
+| 19/12/2023  | ```Toro-LlaMA-7B-1.0```  |[Toro-LlaMA 7B 1.0](https://huggingface.co/allbyai/torusgpt-7b-v1.0) | 2048 |
 
 
 ## Technical overview
 
 The pre-trained model is based on LLAMA 2 which fine-tuned on large raw dataset by bkai-foundation-labs [Vietnamese-LLAMA2](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB).
 
-This mode, trained on 430k of high-quality, multi-turn conversation data, sourced from both open-source and in-house datasets, Torus GPT excels in chat modeling and Vietnamese language understanding. Sources include [UIT-ViQUAD](https://paperswithcode.com/dataset/uit-viquad), [Bactrian-X](https://huggingface.co/datasets/MBZUAI/Bactrian-X), [Grade-school-math](https://github.com/openai/grade-school-math),... Other datasets contain our custom conversation data and data covering multiple topics.
+This mode, trained on 430k of high-quality, multi-turn conversation data, sourced from both open-source and in-house datasets, Toro LlaMA excels in chat modeling and Vietnamese language understanding. Sources include [UIT-ViQUAD](https://paperswithcode.com/dataset/uit-viquad), [Bactrian-X](https://huggingface.co/datasets/MBZUAI/Bactrian-X), [Grade-school-math](https://github.com/openai/grade-school-math),... Other datasets contain our custom conversation data and data covering multiple topics.
 
 Key advantages of Toro-LlaMA include:
 
@@ -48,7 +48,7 @@ Key advantages of Toro-LlaMA include:
 - Superior performance over existing open-source models.
 - Simplified deployment for a wide array of applications.
 
-With Torus GPT, we hope to push the state of current AI technology huge step forward for Vietnam and Vietnamese people.
+With Toro LlaMA, we hope to push the state of current AI technology huge step forward for Vietnam and Vietnamese people.
 
 ## Evaluations
 
@@ -142,7 +142,7 @@ This project (and its derivative works) is derived from Meta's Llama-2 model, an
 
 Special thanks to [bkai-foundation-labs](https://huggingface.co/bkai-foundation-models/vietnamese-llama2-7b-40GB), [phogpt](https://github.com/VinAIResearch/PhoGPT), and [fastchat](https://github.com/lm-sys/FastChat/tree/main) for their contributions and references in our work.
 
-Please consider citing our work if you find the Torus GPT beneficial.
+Please consider citing our work if you find the Toro LlaMA beneficial.
 
 ```
 @misc{allbyai2023torollama,
