@@ -152,7 +152,7 @@ Please consider citing our work if you find the Toro LLaMA beneficial.
     title={Toro-LLaMA: The Vietnamese Instruction-Following and Chat Model},
     author={Duy Quang Do, Hoang Le and Duc Thang Nguyen},
     year={2023},
-    note={https://github.com/allbyai/torusGPT}
+    note={https://github.com/allbyai/ToroLLaMA}
     howpublished={Software}
 }
 ```
