@@ -1,5 +1,5 @@
 # author: AllByAI, TorusAI
-# this software is licensed under the TorusGPT License and Llama2.
+# this software is licensed under the Toro-LlaMA License and Llama2.
 
 import streamlit as st
 from langchain.callbacks.base import BaseCallbackHandler
@@ -94,7 +94,7 @@ client = get_qa_session()
 
 def main():
     user_input = st.chat_input("You", key="user_input")
-    st.title("TorusGPT - power by allby.ai")
+    st.title("Toro-LlaMA - power by allby.ai")
     item: ChatMessage
     for item in st.session_state.chatlog:
         if item.role == "user":
