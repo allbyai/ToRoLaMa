@@ -13,7 +13,7 @@ openai.api_base = "https://localhost/api/v1"
 
 HISTORY_LEN = 5  # Maximum history length that chatbot can remember
 PROMPT_SYSTEM = "Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng."
-GPT_MODEL = "torusgpt-7b-v1.0"
+GPT_MODEL = "allbyai/ToroLLaMA-7b-v1.0"
 
 
 class ChatMessage():

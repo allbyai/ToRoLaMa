@@ -5,7 +5,7 @@ import torch
 import transformers
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-model_path = "allbyai/torusgpt-7b-v1.0"
+model_path = "allbyai/ToroLLaMA-7b-v1.0"
 
 model = transformers.AutoModelForCausalLM.from_pretrained(model_path,
                                                           torch_dtype=torch.float16)
