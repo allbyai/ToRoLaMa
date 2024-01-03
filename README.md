@@ -24,13 +24,13 @@ ToRoLaMa is the result of a collaborative effort of Vietnam-based Taureau AI and
 Everything conserved by a dynamical system is also conserved by its associated torus actions.
 ```
 
-[Taureau AI](https://www.taureau.ai), set up in 2021 in Hanoi by Torus AI people, is focused on the development of a general purpose AI platform, AI product engineering and software development, to serve the other companies inside and outside the Torus AI ecosystem.
+[Taureau AI](https://www.taureau.ai), set up in 2021 in Hanoi by Torus AI people, is focused on the development of a general-purpose AI platform, AI product engineering and software development, to serve the other companies inside and outside the Torus AI ecosystem.
 
 Our common objective is to create augmented intelligence solutions that serve millions of people and make the world a happier place.
 
 Our large language model - ToRoLaMa, developed using a diverse and extensive dataset, aims to provide an enhanced understanding and representation of languages, aspiring to meet and possibly exceed the efficiency, performance, and applicability of existing commercial LLMs.
 
-With ToRoLaMa, we hope contribute to the rapid progress in language processing for Vietnamese speaking people and applications.We also plan to extend it (and other LLMs) to other languages.
+With ToRoLaMa, we hope to contribute to the rapid progress in language processing for Vietnamese speaking people and applications.We also plan to extend it (and other LLMs) to other languages.
 
 This release includes the model weights, inference code, and evaluation results for the 7B (7 billion parameter) version.
 
@@ -51,11 +51,11 @@ Key advantages of ToRoLaMa include:
 - Open-source availability under the [LLaMA 2 License](https://github.com/facebookresearch/LLaMA)
 - Enhanced speed with a smaller model size and an innovative [Vietnamese Tokenizer](https://huggingface.co/bkai-foundation-models/vietnamese-LLaMA2-7b-40GB), whose tokens are 25% shorter compared to ChatGPT and LLaMA for Vietnamese phrases.
 - Superior performance over existing open-source models (see benchmark results below).
-- Simplified deployment for a wide range  of applications.
+- Simplified deployment for a wide range of applications.
 
 ## Evaluations
 
-We used benchmark results of [Vicuna and PhoGPT](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) to evaluate ToRoLaMa and compared our results with others using the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge).The table bellow shows that **ToRoLaMa** performs competitively against state-of-the-art models like ChatGPT.
+We used benchmark results of [Vicuna and PhoGPT](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) to evaluate ToRoLaMa and compared our results with others using the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge). The table below shows that **ToRoLaMa** performs competitively against state-of-the-art models like ChatGPT.
 
 The Fastchat benchmark method, used for evaluating language models, primarily focuses on the accuracy of information in responses. However, an important aspect not accounted for in this method is the accuracy in the choice of language (English vs. Vietnamese). Both **URA-LLaMA-7B** and **URA-LLaMA-13B** often respond in English to Vietnamese questions. Their performance may be rated much lower when specifically benchmarked for proficiency in Vietnamese.
 
@@ -74,7 +74,7 @@ Ranking | Model          | Score   |
 
 *: *The scores of URA models here do not take into account the fact that they often answer in English to questions posed in Vietnamese.*
 
-The details of benchmark in term of subjects are shown in the following figure (we do not display URA-LLaMA because they generate half of the answers in English):
+The details of benchmark in terms of subjects are shown in the following figure (we do not display URA-LLaMA because they generate half of the answers in English):
 
 ![Result](imgs/result.png)
 
@@ -84,7 +84,7 @@ For detailed benchmark information and to rerun the evaluation code, refer to  [
 
 ## Run the model
 
-ToRoLaMa uses a prompt format similar to Vicuna, designed for multi-turn, high-speed, and token-efficient conversations. An example prompt is shown bellow for illustration.
+ToRoLaMa uses a prompt format similar to Vicuna, designed for multi-turn, high-speed, and token-efficient conversations. An example prompt is shown below for illustration.
 
 ```
 Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng.
@@ -127,7 +127,7 @@ Then, initiate the RESTful API server:
 python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 ```
 
-Finaly, run the example streamlit code:
+Finally, run the example streamlit code:
 ```
 streamlit run demo.py
 ```
