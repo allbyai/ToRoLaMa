@@ -57,9 +57,9 @@ Key advantages of ToRoLaMa include:
 
 We used benchmark results of [Vicuna and PhoGPT](https://docs.google.com/spreadsheets/d/122ldeXuBmLSFFqaFbflj82VyYTKL-Qc2hZiTI9csc-Q/edit#gid=44668470) to evaluate ToRoLaMa and compared our results with others using the [Fastchat MT-bench method](https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge).The table bellow shows that **ToRoLaMa** performs competitively against state-of-the-art models like ChatGPT.
 
-The Fastchat benchmark method, used for evaluating language models, primarily focuses on the accuracy of information in responses. However, an important aspect not accounted for in this method is the accuracy in the choice of language (English vs. Vietnamese). Both **URA-LLaMA-7B** and **URA-LLaMA-13B** often respond in English to Vietnamese questions. Their performance might be rated much lower when specifically benchmarked for proficiency in Vietnamese.
+The Fastchat benchmark method, used for evaluating language models, primarily focuses on the accuracy of information in responses. However, an important aspect not accounted for in this method is the accuracy in the choice of language (English vs. Vietnamese). Both **URA-LLaMA-7B** and **URA-LLaMA-13B** often respond in English to Vietnamese questions. Their performance may be rated much lower when specifically benchmarked for proficiency in Vietnamese.
 
-The benchmark scores shown in the table bellow:
+The benchmark scores are shown in the following table:
 
 Ranking | Model          | Score   |
 | ------------- | ------------- | ------------- |
@@ -74,7 +74,7 @@ Ranking | Model          | Score   |
 
 *: *The scores of URA models here do not take into account the fact that they often answer in English to questions posed in Vietnamese.*
 
-The details of benchmark in term of subjects is shown in the following figure (we do not display URA-LLaMA because they generate half of the answers in English):
+The details of benchmark in term of subjects are shown in the following figure (we do not display URA-LLaMA because they generate half of the answers in English):
 
 ![Result](imgs/result.png)
 
@@ -90,7 +90,7 @@ ToRoLaMa uses a prompt format similar to Vicuna, designed for multi-turn, high-s
 Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng.
 
 USER: Xin chào!
-ASSISTANT: Xin chào, tôi là ToRoLaMA một trợ lý ảo được phát triển bởi AllbyAI! Tôi có thể giúp được gì cho bạn?</s>
+ASSISTANT: Xin chào, tôi tên là ToRoLaMA! Tôi có thể giúp được gì cho bạn?</s>
 USER: Tôi đang cảm thấy không ổn?
 ASSISTANT: Tôi rất tiếc nghe về điều này. Bạn nên chăm sóc bản thân và nếu cảm thấy cần thiết, hãy tìm sự hỗ trợ từ một chuyên gia y tế. Họ có thể cung cấp cho bạn lời khuyên và sự hỗ trợ phù hợp. Sức khỏe của bạn là điều quan trọng nhất. Nếu có bất kỳ điều gì bạn muốn biết thêm hoặc thảo luận, xin đừng ngần ngại chia sẻ.</s>
 ```
