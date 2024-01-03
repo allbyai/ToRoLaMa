@@ -1,11 +1,11 @@
 # author: AllByAI, TorusAI
-# this software is licensed under the Toro-LlaMA License and Llama2.
+# this software is licensed under the ToRoLaMa License and Llama2.
 
 import torch
 import transformers
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-model_path = "allbyai/ToroLLaMA-7b-v1.0"
+model_path = "allbyai/ToRoLaMa-7b-v1.0"
 
 model = transformers.AutoModelForCausalLM.from_pretrained(model_path,
                                                           torch_dtype=torch.float16)

@@ -1,5 +1,5 @@
 # author: AllByAI, TorusAI
-# this software is licensed under the Toro-LlaMA License and Llama2.
+# this software is licensed under the ToRoLaMa License and Llama2.
 
 import streamlit as st
 from langchain.callbacks.base import BaseCallbackHandler
@@ -13,7 +13,7 @@ openai.api_base = "https://localhost/api/v1"
 
 HISTORY_LEN = 5  # Maximum history length that chatbot can remember
 PROMPT_SYSTEM = "Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng."
-GPT_MODEL = "allbyai/ToroLLaMA-7b-v1.0"
+GPT_MODEL = "allbyai/ToRoLaMa-7b-v1.0"
 
 
 class ChatMessage():
@@ -94,7 +94,7 @@ client = get_qa_session()
 
 def main():
     user_input = st.chat_input("You", key="user_input")
-    st.title("Toro-LlaMA - power by allby.ai")
+    st.title("ToRoLaMa - powered by allbyai")
     item: ChatMessage
     for item in st.session_state.chatlog:
         if item.role == "user":
