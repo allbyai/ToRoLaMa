@@ -158,7 +158,7 @@ This model is derived from Meta's LLaMA-2 model, and therefore strictly complies
 
 ## Acknowledgement
 
-The [bkai-foundation-labs](https://huggingface.co/bkai-foundation-models/vietnamese-LLaMA2-7b-40GB), [phogpt](https://github.com/VinAIResearch/PhoGPT), and [fastchat](https://github.com/lm-sys/FastChat/tree/main) and references therein have been used in this work.
+The [bkai-foundation-labs](https://huggingface.co/bkai-foundation-models/vietnamese-LLaMA2-7b-40GB) and [fastchat](https://github.com/lm-sys/FastChat/tree/main) and references therein have been used in this work.
 
 In case you use ToRoLaMa, please cite our work in your publications :
 
