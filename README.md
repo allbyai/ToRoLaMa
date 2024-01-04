@@ -89,10 +89,26 @@ ToRoLaMa uses a prompt format similar to Vicuna, designed for multi-turn, high-s
 ```
 Cuộc hội thoại giữa người dùng và một trí thông minh nhân tạo. Đưa ra câu trả lời chính xác, giúp ích cho người dùng.
 
-USER: Xin chào!
-ASSISTANT: Xin chào, tôi tên là ToRoLaMA! Tôi có thể giúp được gì cho bạn?</s>
-USER: Tôi đang cảm thấy không ổn?
-ASSISTANT: Tôi rất tiếc nghe về điều này. Bạn nên chăm sóc bản thân và nếu cảm thấy cần thiết, hãy tìm sự hỗ trợ từ một chuyên gia y tế. Họ có thể cung cấp cho bạn lời khuyên và sự hỗ trợ phù hợp. Sức khỏe của bạn là điều quan trọng nhất. Nếu có bất kỳ điều gì bạn muốn biết thêm hoặc thảo luận, xin đừng ngần ngại chia sẻ.</s>
+USER: chào
+ASSISTANT: Xin chào! Tôi có thể giúp gì cho bạn hôm nay?</s>
+USER: để quản lý thời gian hiệu quả tôi nên làm thế nào??
+ASSISTANT: Để quản lý thời gian hiệu quả, bạn có thể thực hiện các bước sau đây:
+
+    Lập kế hoạch: Tạo ra lịch trình hoặc danh sách công việc cần làm trong ngày hoặc tuần.
+
+    Ưu tiên công việc: Xác định công việc quan trọng và ưu tiên thực hiện trước.
+
+    Sử dụng lịch: Sử dụng lịch để theo dõi các hoạt động và sự kiện trong ngày.
+
+    Sử dụng một số công cụ hỗ trợ: Sử dụng các công cụ trực tuyến, ứng dụng điện thoại di động để giúp quản lý thời gian.
+
+    Tránh phân tâm: Tránh những việc phức tạp và không cần thiết để giải quyết trong quá trình làm việc.
+
+    Nghỉ ngơi: Để giảm căng thẳng và tăng năng suất, hãy dành thời gian nghỉ ngơi giữa các công việc.
+
+    Đánh giá và cải tiến: Đánh giá các phương pháp quản lý thời gian của bạn để tìm cách cải tiến trong tương lai.
+
+Những cách trên sẽ giúp bạn quản lý thời gian hiệu quả hơn và tăng cường năng suất trong công việc.</s>
 ```
 
 The file [inference_hf.py](/inference_hf.py) in our github repository contains an example code for running ToRoLaMa model from Huggingface hub. Execute it using the following command:
